@@ -1,7 +1,8 @@
 # screenshot
 This resource will let you make a selection of the game that you want to screenshot. 
 
-<img src="https://i.imgur.com/l45hSyc.gif" alt="screenshot-preview" width="600">
+###### Preview (Can't embed because of the size limit):
+http://i.imgur.com/l45hSyc.gif
 
 ### Installation
 1. Install my modified <a href="https://github.com/jonassvensson4/screenshot-basic">screenshot-basic</a> resource.

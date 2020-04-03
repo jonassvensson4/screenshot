@@ -62,8 +62,10 @@ on('__cfx_nui:selection:close', () => {
     SetNuiFocus(false, false);
 });
 
-setTick(() => {
+// Key event
+/*setTick(() => {
+    // 212 = home button
     if ( IsControlJustReleased(0, 212) ) {
         screenSelection();
     }
-});
+});*/

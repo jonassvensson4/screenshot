@@ -1,7 +1,8 @@
 # screenshot
 This resource will let you make a selection of the game that you want to screenshot. 
 
-###### Preview (Can't embed because of the size limit):
+![screen selection preview](https://i.imgur.com/zuEzVMm.png)
+###### GIF preview (Can't embed because of the size limit):
 http://i.imgur.com/l45hSyc.gif
 
 ### Installation

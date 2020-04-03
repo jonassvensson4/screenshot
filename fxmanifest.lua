@@ -2,14 +2,15 @@ fx_version 'adamant'
 
 game 'gta5'
 
-client_script 'client/client.js'
+client_script 'client.js'
 
-ui_page 'client/nui/index.html'
+ui_page 'index.html'
 
-export 'screenSelection'
+export 'select'
 
 dependency 'screenshot-basic'
 
 files {
-    'client/nui/*'
+    'index.html',
+    'index.js'
 }

@@ -19,11 +19,33 @@ exports['screenshot'].select(( url ) => {
         args: [url]
     });
 });
+
+// You could also set a fixed width & height
+exports['screenshot'].select({
+    width: 200,
+    height: 200
+},( url ) => {
+    emit('chat:addMessage', {
+        template: '<img src="{0}">',
+        args: [url]
+    });
+});
 ```
 
 #### LUA example
 ```lua
 exports['screenshot']:select(function ( url )
+    TriggerEvent('chat:addMessage', {
+        template = '<img src="{0}"/>',
+        args = {url}
+    })
+end)
+
+-- You could also set a fixed width & height
+exports['screenshot']:select({
+    width = 200,
+    height = 200
+},function ( url )
     TriggerEvent('chat:addMessage', {
         template = '<img src="{0}"/>',
         args = {url}

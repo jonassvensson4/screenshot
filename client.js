@@ -3,18 +3,23 @@ const CLIENT_ID = 'changeThis';
 let callbacks = {};
 
 // Show the selection
-function ShowScreenSelection() {
+function ShowScreenSelection( pos ) {
     SetNuiFocus(true, true)
-    SendNuiMessage(JSON.stringify({ action: 'screenshot' }));
+    SendNuiMessage(JSON.stringify({ action: 'screenshot', pos: pos }));
 }
 
 // Get the selection URL, used by exports
-function select( cb ) {
+function select( pos, cb ) {
+    if ( typeof pos === 'function' ) {
+        cb = pos;
+        pos = undefined;
+    }
+
     // Store the callback
     callbacks[Object.keys( callbacks ).length++] = cb;
 
     // Show the selecion
-    ShowScreenSelection();
+    ShowScreenSelection(pos);
 }
 
 // Screenshot command

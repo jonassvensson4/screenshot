@@ -34,7 +34,6 @@ window.addEventListener('message', function( event ) {
 
 $(document)
     .mousedown(function( event ) {
-        console.log(selection.override)
         if ( !selection.override ) {
             $('.selection').remove();
 

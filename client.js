@@ -48,7 +48,7 @@ on('__cfx_nui:selection:callback', ( data, cb ) => {
     cb(true);
 
     // Take a screenshot using my modified version of screenshot-basic
-    exports['screenshot-basic'].requestScreenshotUpload(`https://api.imgur.com/3/upload`, 'imgur', {
+    exports['screenshot-basic'].requestScreenshotUpload(`https://api.imgur.com/3/image`, 'imgur', {
         headers: {
             'authorization': `Client-ID ${ CLIENT_ID }`,
             'content-type': 'multipart/form-data'
